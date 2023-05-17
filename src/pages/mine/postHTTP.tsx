@@ -6,11 +6,11 @@ export default class PersonAdd extends React.Component {
     name: '',
   }
 
-  handleChange = (event) => {
+  handleChange = (event: any) => {
     this.setState({ name: event.target.value })
   }
 
-  handleSubmit = (event) => {
+  handleSubmit = (event: any) => {
     event.preventDefault()
 
     const user = {
