@@ -48,7 +48,6 @@ const YourInfo = () => {
       <Text mt={2}> your balance of GTC is: {GTC_balance.data?.formatted}</Text>
     </div>
   )
-
 }
 
 const ReadC = () => {
