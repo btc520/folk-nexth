@@ -2,7 +2,7 @@ import { useState } from 'react'
 import type { Address } from 'wagmi'
 import { useContractRead } from 'wagmi'
 
-import { wagmigotchiContractConfig } from './contracts'
+import { wagmigotchiContractConfig } from 'components/contracts'
 
 export default function ReadContract() {
   return (

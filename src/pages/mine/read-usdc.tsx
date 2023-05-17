@@ -2,7 +2,7 @@ import { useState } from 'react'
 import type { Address } from 'wagmi'
 import { useContractRead } from 'wagmi'
 
-import { USDTConfig } from './USDT'
+import { USDTConfig } from 'components/USDT'
 
 import { Button, Heading, Text, ListItem, UnorderedList } from '@chakra-ui/react'
 
