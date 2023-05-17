@@ -9,8 +9,6 @@ import { USDTConfig } from 'components/USDT'
 import { Button, Text, Heading, ListItem, UnorderedList } from '@chakra-ui/react'
 
 // import { useState } from "react"
-
-
 const YourInfo = () => {
   const [tokenContract, setTokenContract] = useState('')
   const { chain } = useNetwork()
@@ -59,8 +57,6 @@ const ReadC = () => {
     </div>
   )
 }
-
-
 export default function ReadCont() {
   return (
     <div>

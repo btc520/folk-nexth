@@ -17,8 +17,6 @@ export default function Aby() {
   }
   const payload = {}
 
-
-
   function PTAby() {
     axios.post(url, payload, config).then((response) => {
       setPost(response.data)
