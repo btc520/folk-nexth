@@ -14,13 +14,19 @@ import ENSIcon from 'assets/icons/ens.png'
 
 export const ExampleItems = [
   {
+    title: '读取合约',
+    description: '读取contract usdt 的信息',
+    image: SignIcon.src,
+    url: '/mine/read-usdt',
+  },
+  {
     title: 'Sign & verify messages',
     description: 'Keys can be used to sign any kind of messages. This is useful to verify a message was sent by a specific account.',
     image: SignIcon.src,
     url: '/examples/sign',
   },
   {
-    title: 'Sign-in with Ethereum',
+    title: '以太坊签名 Sign-in with Ethereum',
     description: 'Sign-in with Ethereum is a new form of authentication that enables users to control their identity with their Ethereum account.',
     image: AuthIcon.src,
     url: '/examples/siwe',
@@ -39,7 +45,7 @@ export const ExampleItems = [
     url: '/examples/custom-message',
   },
   {
-    title: 'Send Ether',
+    title: ' 捐赠 Send Ether',
     description: 'Sending Ether to another address is the most basic, common transaction that you can do.',
     image: EtherIcon.src,
     url: '/examples/send-ether',

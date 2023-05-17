@@ -1,7 +1,7 @@
 import { ThemingProps } from '@chakra-ui/react'
 import { mainnet, sepolia, polygon, optimism, arbitrum } from '@wagmi/chains'
 
-export const SITE_NAME = 'DIAO_MAO'
+export const SITE_NAME = '名字叫叼毛'
 export const SITE_DESCRIPTION = ' 一个专业做 web3 炸片的网站 '
 export const SITE_URL = 'https://web-3-sepia.vercel.app'
 
@@ -11,8 +11,8 @@ export const THEME_CONFIG = {
   initialColorMode: THEME_INITIAL_COLOR,
 }
 
-export const SOCIAL_TWITTER = 'wslyvh'
-export const SOCIAL_GITHUB = 'wslyvh/nexth'
+export const SOCIAL_TWITTER = 'gm1thai'
+export const SOCIAL_GITHUB = 'btc520/web3'
 
 export const ETH_CHAINS = [mainnet, sepolia, polygon, optimism, arbitrum]
 
