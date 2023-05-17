@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import { Button, Text, Heading, ListItem, UnorderedList, Input } from '@chakra-ui/react'
+import { Button, Text, Heading, ListItem, UnorderedList, Input, Link } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
 
 export default function Aby() {
@@ -29,9 +29,10 @@ export default function Aby() {
       setHttp(response.data.code)
       setDate(response.data?.data.date)
 
-      console.log(response.data?.data.date)
+      console.log(response)
     })
   }
+
   return (
     <div>
       <Heading mt={5}> Abyss 交互 </Heading>
@@ -43,9 +44,15 @@ export default function Aby() {
         点我交互
       </Button>
 
-      <Text mt={5}>交互状态 Server:    {Server}</Text>
-      <Text mt={5}>交互状态 HTTP:    {Http}</Text>
-      <Text mt={5}>交互日期 (今天):    {Date}</Text>
+      <Text mt={5}> 交互状态 Server: {Server}</Text>
+      <Text mt={5}> 交互状态 HTTP: {Http}</Text>
+      <Text mt={5}> 交互日期 (今天): {Date}</Text>
+
+      <Text mt={5}>以下是备注信息: </Text>
+      <Text mt={5}>
+        <Link>https://ca.abyssworld.games/</Link>{' '}
+      </Text>
+      <Text mt={5}>可以的在 chrome dev 里面的 network 找到 checkin 然后找到 authentication, 截取 Bear 后面部分 </Text>
     </div>
   )
 }
