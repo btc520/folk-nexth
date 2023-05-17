@@ -10,6 +10,8 @@ import { Button, Text, Heading, ListItem, UnorderedList } from '@chakra-ui/react
 
 // import { useState } from "react"
 
+
+
 const YourInfo = () => {
   const [tokenContract, setTokenContract] = useState('')
   const { chain } = useNetwork()
@@ -26,6 +28,8 @@ const YourInfo = () => {
 
   return <Text mt={2}> your balance of contract is: {bl}</Text>
 }
+
+
 
 const ReadC = () => {
   const name = useContractRead({ ...USDTConfig, functionName: 'name' })
@@ -58,6 +62,7 @@ const ReadC = () => {
     </div>
   )
 }
+
 
 export default function ReadCont() {
   return (
