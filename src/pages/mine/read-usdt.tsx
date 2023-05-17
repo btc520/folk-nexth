@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { Address } from 'wagmi'
-import { useContractRead } from 'wagmi'
+import { useContractRead, useBlockNumber } from 'wagmi'
 import { useAccount, useBalance, useContractWrite, usePrepareContractWrite, useWaitForTransaction, useNetwork, erc20ABI } from 'wagmi'
 import { useDebounce } from 'usehooks-ts'
 
@@ -9,21 +9,46 @@ import { USDTConfig } from 'components/USDT'
 import { Button, Text, Heading, ListItem, UnorderedList } from '@chakra-ui/react'
 
 // import { useState } from "react"
-const YourInfo = () => {
+
+const BlockData = () => {
   const [tokenContract, setTokenContract] = useState('')
   const { chain } = useNetwork()
+  const block = useBlockNumber({ watch: true })
+  const network = useNetwork()
+  const explorerUrl = network.chain?.blockExplorers?.default.url
+  return (
+    <div>
+      <Text mt={2}>
+        {network.chain?.name ?? 'Ethereum'} | Curtrent Block # {block.data?.toString()}
+      </Text>
+    </div>
+  )
+}
+
+const YourInfo = () => {
   const { address } = useAccount()
 
-  const debouncedTokenContract = useDebounce('', 500)
-  const balance = useBalance({
+  const ETH_cont = useDebounce('', 500)
+  const ETH_balance = useBalance({
     address,
-    token: debouncedTokenContract as `0x{string}`,
+    token: ETH_cont as `0x{string}`,
   })
+  console.log(ETH_balance.data?.formatted)
 
-  const bl = balance.data?.formatted
-  console.log(bl)
+  const GTC_cont = useDebounce('0xDe30da39c46104798bB5aA3fe8B9e0e1F348163F', 500)
+  const GTC_balance = useBalance({
+    address,
+    token: GTC_cont as `0x{string}`,
+  })
+  console.log(GTC_balance.data?.formatted)
 
-  return <Text mt={2}> your balance of contract is: {bl}</Text>
+  return (
+    <div>
+      <Text mt={2}> your balance of ETH is: {ETH_balance.data?.formatted}</Text>
+      <Text mt={2}> your balance of GTC is: {GTC_balance.data?.formatted}</Text>
+    </div>
+  )
+
 }
 
 const ReadC = () => {
@@ -61,6 +86,7 @@ export default function ReadCont() {
   return (
     <div>
       <div>
+        <BlockData />
         <YourInfo />
         <ReadC />
       </div>

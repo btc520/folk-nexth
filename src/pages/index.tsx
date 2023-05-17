@@ -14,7 +14,13 @@ import ENSIcon from 'assets/icons/ens.png'
 
 export const ExampleItems = [
   {
-    title: '读取合约',
+    title: 'Abyss 交互',
+    description: '自动签到, 需要输入 token',
+    image: SignIcon.src,
+    url: '/mine/abyss2',
+  },
+  {
+    title: '读取合约和区块恋信息',
     description: '读取contract usdt 的信息',
     image: SignIcon.src,
     url: '/mine/read-usdt',

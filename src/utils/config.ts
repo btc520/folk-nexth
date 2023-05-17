@@ -1,5 +1,6 @@
 import { ThemingProps } from '@chakra-ui/react'
-import { mainnet, sepolia, polygon, optimism, arbitrum } from '@wagmi/chains'
+import { mainnet, sepolia, polygon, optimism, arbitrum, goerli } from '@wagmi/chains'
+//import { goerli } from 'viem/chains'
 
 export const SITE_NAME = '名字叫叼毛'
 export const SITE_DESCRIPTION = ' 一个专业做 web3 炸片的网站 '
@@ -14,7 +15,7 @@ export const THEME_CONFIG = {
 export const SOCIAL_TWITTER = 'gm1thai'
 export const SOCIAL_GITHUB = 'btc520/web3'
 
-export const ETH_CHAINS = [mainnet, sepolia, polygon, optimism, arbitrum]
+export const ETH_CHAINS = [mainnet, sepolia, polygon, optimism, arbitrum, goerli]
 
 export const SERVER_SESSION_SETTINGS = {
   cookieName: SITE_NAME,
