@@ -71,13 +71,10 @@ export default function Examples() {
       <Head />
 
       <main>
-        <HeadingComponent as="h2">Nexth Examples</HeadingComponent>
-        <Text pb={4}>
-          All these examples can be found in the main repo at <Code>src/pages/examples</Code> to help you bootstrap development. You can delete the
-          entire folder before deploying your own App.{' '}
-        </Text>
+        <HeadingComponent as="h2"> 专业 web3 仿站 </HeadingComponent>
+        <Text pb={4}>以下都是可以捐赠的功能, 欢迎使用 联系我 twitter.com/gm1thai . </Text>
 
-        <CardList title="Examples" items={ExampleItems} />
+        <CardList title="试试就试试" items={ExampleItems} />
       </main>
     </>
   )
