@@ -14,15 +14,21 @@ import ENSIcon from 'assets/icons/ens.png'
 
 export const ExampleItems = [
   {
+    title: 'ZKSYNC 合约费用',
+    description: '输入合约查询费用',
+    image: AuthIcon.src,
+    url: '/m/zk-check',
+  },
+  {
     title: 'Abyss 交互',
     description: '自动签到, 需要输入 token',
-    image: SignIcon.src,
+    image: EtherIcon.src,
     url: '/m/abyss2',
   },
   {
     title: '读取合约和区块恋信息',
     description: '读取contract usdt 的信息',
-    image: SignIcon.src,
+    image: ENSIcon.src,
     url: '/m/read-usdt',
   },
   {
