@@ -1,7 +1,7 @@
 import { Head } from 'components/layout/Head'
 import { HeadingComponent } from 'components/layout/HeadingComponent'
 import { CardList } from 'components/layout/CardList'
-import { Code, Text } from '@chakra-ui/react'
+import { Code, Text, Link } from '@chakra-ui/react'
 
 import SignIcon from 'assets/icons/fingerprint.png'
 import AuthIcon from 'assets/icons/auth.png'
@@ -84,7 +84,7 @@ export default function Examples() {
 
       <main>
         <HeadingComponent as="h2"> 专业 web3 仿站 </HeadingComponent>
-        <Text pb={4}>以下都是可以捐赠的功能, 欢迎使用 联系我 twitter.com/gm1thai . </Text>
+        <Text pb={4}>以下都是可以捐赠的功能, 欢迎使用 联系我 <Link href="https://twitter.com/gm1thai">twitter-gm1thai</Link> </Text>
 
         <CardList title="试试就试试" items={ExampleItems} />
       </main>
