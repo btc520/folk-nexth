@@ -14,10 +14,10 @@ import ENSIcon from 'assets/icons/ens.png'
 
 export const ExampleItems = [
   {
-    title: 'ZKSYNC 合约费用',
-    description: '输入合约查询费用',
+    title: 'KaratDAO 交互测试',
+    description: '前端API读取你的 role score sign, 然后合成成input, 再发送交易',
     image: AuthIcon.src,
-    url: '/m/zk-check',
+    url: '/m/karat',
   },
   {
     title: 'Abyss 交互',
