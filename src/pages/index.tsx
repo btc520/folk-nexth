@@ -17,63 +17,63 @@ export const ExampleItems = [
     title: 'Abyss 交互',
     description: '自动签到, 需要输入 token',
     image: SignIcon.src,
-    url: '/mine/abyss2',
+    url: '/m/abyss2',
   },
   {
     title: '读取合约和区块恋信息',
     description: '读取contract usdt 的信息',
     image: SignIcon.src,
-    url: '/mine/read-usdt',
+    url: '/m/read-usdt',
   },
   {
     title: 'Sign & verify messages',
     description: 'Keys can be used to sign any kind of messages. This is useful to verify a message was sent by a specific account.',
     image: SignIcon.src,
-    url: '/examples/sign',
+    url: '/e/sign',
   },
   {
     title: '以太坊签名 Sign-in with Ethereum',
     description: 'Sign-in with Ethereum is a new form of authentication that enables users to control their identity with their Ethereum account.',
     image: AuthIcon.src,
-    url: '/examples/siwe',
+    url: '/e/siwe',
   },
   {
     title: 'Gitcoin Passport',
     description:
       'Gitcoin Passport is an identity protocol that proves your trustworthiness without needing to collect personally identifiable information.',
     image: PassportIcon.src,
-    url: '/examples/passport',
+    url: '/e/passport',
   },
   {
     title: 'Custom Contract',
     description: 'This example shows a custom Solidity smart contract deployed using Hardhat. You can find sample contract under /contracts.',
     image: CustomIcon.src,
-    url: '/examples/custom-message',
+    url: '/e/custom-message',
   },
   {
     title: ' 捐赠 Send Ether',
     description: 'Sending Ether to another address is the most basic, common transaction that you can do.',
     image: EtherIcon.src,
-    url: '/examples/send-ether',
+    url: '/e/send-ether',
   },
   {
     title: 'Send ERC20 Token',
     description: 'ERC20 introduces a standard interface for fungible tokens. Use this example to send any ERC20 to another address.',
     image: TokenIcon.src,
-    url: '/examples/send-erc20',
+    url: '/e/send-erc20',
   },
   {
     title: 'Mint NFT',
     description: 'A Non-Fungible Token (NFT) is used to identify something or someone in a unique way. Use this ERC721 example to mint your own NFT.',
     image: NFTIcon.src,
-    url: '/examples/mint-nft',
+    url: '/e/mint-nft',
   },
   {
     title: 'Fetch ENS',
     description:
       'Fetch Ethereum Name Service names to Ethereum addresses using a decentralized domain name system that maps human-readable names to addresses.',
     image: ENSIcon.src,
-    url: '/examples/fetch-ens',
+    url: '/e/fetch-ens',
   },
 ]
 
