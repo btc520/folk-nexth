@@ -3,8 +3,6 @@
 //   test1 = 'gogo2'
 // }
 
-
-
 export default function Test() {
   let test1 = 'hechao'
 

@@ -4,8 +4,6 @@ import ERC20_ABI from './DAI.json'
 
 import { ethers } from 'ethers'
 
-
-
 class Metamask extends Component {
   constructor(props) {
     super(props)
@@ -63,8 +61,6 @@ class Metamask extends Component {
       )
     }
   }
-
-
 
   render() {
     return <div>{this.renderMetamask()}</div>

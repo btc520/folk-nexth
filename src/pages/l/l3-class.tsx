@@ -8,6 +8,3 @@ person.name = 'Jane'
 export default function Home() {
   return <div>{person.name} </div>
 }
-
-
-

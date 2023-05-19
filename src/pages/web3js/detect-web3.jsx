@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import Web3 from 'web3'
 import { Button, Text, Heading, ListItem, UnorderedList, Input, Link } from '@chakra-ui/react'
 import { resolve } from 'path'
