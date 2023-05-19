@@ -6,11 +6,13 @@ import { ethers } from 'ethers'
 const contractAddress = '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2'
 const abi = contract.abi
 
+//declare var window: any
+
 function App() {
   const [currentAccount, setCurrentAccount] = useState(null)
 
   const checkWalletIsConnected = async () => {
-    const { ethereum } = window
+    const { ethereum } = window as any
 
     if (!ethereum) {
       console.log('Make sure you have Metamask installed!')
@@ -31,7 +33,7 @@ function App() {
   }
 
   const connectWalletHandler = async () => {
-    const { ethereum } = window
+    const { ethereum } = window as any
 
     if (!ethereum) {
       alert('Please install Metamask!')
@@ -48,7 +50,7 @@ function App() {
 
   const mintNftHandler = async () => {
     try {
-      const { ethereum } = window
+      const { ethereum } = window as any
 
       if (ethereum) {
         const provider = new ethers.BrowserProvider(ethereum)
