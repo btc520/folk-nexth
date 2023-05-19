@@ -2,7 +2,8 @@
   "extends": "@tsconfig/next/tsconfig.json",
   "compilerOptions": {
     "target": "ESNEXT",
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "strictPropertyInitialization": false
   },
   "ts-node": {
     "require": ["tsconfig-paths/register"]
