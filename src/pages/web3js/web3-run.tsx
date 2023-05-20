@@ -1,7 +1,11 @@
 /* eslint-disable */
 
 import React, { useState, useCallback, ChangeEvent } from 'react'
-import { web3 } from './web33.bk'
+
+import Web3 from 'web3'
+export const web3 = new Web3('https://rpc.ankr.com/eth_goerli')
+
+//import { web3 } from './web33.bk'
 import { Input } from './Input'
 
 export default function UtilExample() {
