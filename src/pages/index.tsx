@@ -14,8 +14,8 @@ import ENSIcon from 'assets/icons/ens.png'
 
 export const ExampleItems = [
   {
-    title: '合约分行工具',
-    description: '去看看',
+    title: '区块相关工具',
+    description: '合约分行工具, decimal to hex',
     image: ENSIcon.src,
     url: '/m/tools',
   },
