@@ -14,6 +14,18 @@ import ENSIcon from 'assets/icons/ens.png'
 
 export const ExampleItems = [
   {
+    title: '合约分行工具',
+    description: '去看看',
+    image: ENSIcon.src,
+    url: '/m/tools',
+  },
+  {
+    title: '自定义发送 InputData',
+    description: '去看看',
+    image: ENSIcon.src,
+    url: '/web3js/custom-send/send2',
+  },
+  {
     title: 'KaratDAO 交互测试',
     description: '前端API读取你的 role score sign, 然后合成成input, 再发送交易',
     image: AuthIcon.src,
