@@ -5,7 +5,7 @@ const addressFrom = '0x6Be02d1d3665660d22FF9624b7BE0551ee1Ac91b'
 const addressTo = '0xB90168C8CBcd351D069ffFdA7B71cd846924d551'
 const web3 = new Web3('http://localhost:9933')
 
-privKey = ""
+const privKey = ''
 // Create transaction
 const deploy = async () => {
   //const { ethereum } = window as any
@@ -27,4 +27,4 @@ const deploy = async () => {
   console.log(`Transaction successful with hash: ${createReceipt.transactionHash}`)
 }
 
-export default deploy()
+export default deploy

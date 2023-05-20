@@ -9,3 +9,5 @@ export const Input = (props: { label: any; value: any; onChange: any }) => {
     </div>
   )
 }
+
+export default Input
